@@ -12,6 +12,7 @@ function calendar() {
   //Time at 9AM
   var timeat9 = m.format("9 [AM]").toString();
   time9.append(timeat9);
+  moment().format('ll');
 
   var col9 = document.querySelector("#col9");
   a = document.createElement("INPUT");
@@ -29,13 +30,15 @@ function calendar() {
     a.setAttribute("placeholder", "Passed time");
     a.style.backgroundColor = "silver";
     col9.append(x);
-  }* /
+  }
 
 
   var textboxArray = $(".form-control");
   for (let i = 0; i < textboxArray.length; i++) {
     let val = getCookie("box" + i);
     textboxArray[i].value = val != null ? val : "";
+    localStorage.setItem(name, value)
+    localStorage.getItem(name, value)
   }
 
   document.getElementById("date").innerHTML = moment();
@@ -48,10 +51,11 @@ function calendar() {
 
   function setCookie(name, value) {
     document.cookie = name + "=" + value + ";path=/;";
-
   }
 
   function getCookie(name) {
     var v = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
     return v ? v[2] : null;
+    localStorage.setItem(name, value);
+    localStorage.getItem(name, value);
   }
