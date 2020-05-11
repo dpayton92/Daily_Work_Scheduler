@@ -7,12 +7,16 @@ var time2 = document.querySelector("#time2");
 var time3 = document.querySelector("#time3");
 var time4 = document.querySelector("#time4");
 var time5 = document.querySelector("#time5");
+var today = new Date();
+document.getElementById("para1").innerHTML = formatAMPM();
 
 function calendar() {
   //Time at 9AM
   var timeat9 = m.format("9 [AM]").toString();
   time9.append(timeat9);
-  moment().format('ll');
+  moment('2016-01-01 11:31:23 PM');
+}
+ 
 
   var col9 = document.querySelector("#col9");
   a = document.createElement("INPUT");
@@ -48,14 +52,10 @@ function calendar() {
     setCookie("box" + box, textboxArray[box].value);
   }
 
-
   function setCookie(name, value) {
     document.cookie = name + "=" + value + ";path=/;";
   }
 
   function getCookie(name) {
-    var v = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
-    return v ? v[2] : null;
-    localStorage.setItem(name, value);
-    localStorage.getItem(name, value);
-  }
+    var v = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)")}   return v ? v[2] : null;
+ 
