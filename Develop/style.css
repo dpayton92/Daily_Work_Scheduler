@@ -49,7 +49,7 @@ input {
 
 .past {
   background-color: hsl(217, 96%, 51%);
-  color: white;
+  color: rgb(35, 90, 44);
 }
 
 .present {
@@ -58,19 +58,19 @@ input {
 }
 
 .future {
-  background-color: #000000;
-  color: white;
+  background-color: #3815d3;
+  color: rgb(219, 223, 28);
 }
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #000000;
-  color: white;
+  color: rgb(184, 28, 28);
 }
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
   
 }
-© 2020 GitHub, Inc.
+
