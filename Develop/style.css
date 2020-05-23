@@ -1,77 +1,52 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+.date{
+  font-family: 'Noto Serif', serif;
+  text-shadow: 2px 2px rgba(0,0,0,0.25);
 }
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+
+.time{
+  width: 10%;
+  text-align: right;
+  height: 2.5rem;
+  padding: 1rem;
+  border-right: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
 }
 
-input {
-  width: 100%;
+.content{
+  width: 80%;
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  background: lightgreen;
+  border-right: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  font-family: 'Sanchez', serif;
+  font-size: 14px;
+}
+
+.save{
+  width: 10%;
   text-align: center;
+  padding-top: 1.5rem;
+  border-radius: 4px;
+  background: #36a6cf;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-  
+.planner-container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 10px 10px 18px 0px rgba(0,0,0,0.75);
+  margin-bottom: 3rem;
 }
 
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
-  text-align: center;
-  border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
-}
-
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
-}
-
-.past {
-  background-color: hsl(217, 96%, 51%);
-  color: rgb(35, 90, 44);
-}
-
-.present {
-  background-color: #ff02c8;
-  color: white;
-}
-
-.future {
-  background-color: #3815d3;
-  color: rgb(219, 223, 28);
-}
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #000000;
-  color: rgb(184, 28, 28);
-}
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-  
+.time-slot{
+  display: flex;
 }
 
